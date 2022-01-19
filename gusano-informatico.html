@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/fotos/icon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/fotos/icon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/fotos/icon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/fotos/icon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/fotos/icon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/fotos/icon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/fotos/icon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/fotos/icon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/fotos/icon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/fotos/icon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/fotos/icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/fotos/icon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/fotos/icon/favicon-16x16.png">
+    <title>Gusano informático</title>
+</head>
+<body>
+    <header>
+        <h1 class="centro subrayado">2.3.8 Gusano informático (Worm)</h1>
+    </header>
+    <main>
+        <section class="bordes_izqDer">
+            <p>A diferencia de un 
+                <a href="/virus-informatico.html">virus</a>,
+                 los gusanos tiene la capacidad de autorreplicarse; esto significa, que los Worms se propagan por si sólo sin 
+                necesidad de la intervención humana. Otra diferencia del gusano con respecto a los
+                <a href="/virus-informatico.html">virus</a>,
+                 es que no tienen como objetivo modificar 
+                otros programas para insertaren ellos una copia de sí mismo. Sino que el worm es un programa cuyo objetivos es crear copias de sí 
+                mismo e infectar con ellas otros equipos informáticos, ya sea por medio de una red interna o por medio de Internet u otro tipo
+                de red de ordenadores. </p>
+            <p>El objetivo de los worms consiste es provocar el colapso de mayor número de ordenadores posible, bloqueando los equipos de una red y su 
+                capacidad de  proceso. O sea el gusano se ejecuta en el equipo informático infectándolo y bloqueándolo hasta que fuera imposible ejecutar 
+                otros programas. Para lograr propagarse en el mayor número de equipos informáticos, los gusanos crean copias de sí mismos en el equipo 
+                informático afectado, que distribuyen posteriormente a los demás equipos a través de diferentes medios, como el correo electrónico, 
+                programas P2P o de mensajería instantánea, entre otros.</p>
+            <p>Por ende tenemos dos tipos de gusanos según su forma de infectar:</p>      
+            <p>Gusanos de equipos informáticos: este tipo de worms utiliza una copia completa de su programa en cada equipo informático que infectan. Es 
+                decir, en estos equipos informáticos el programa está contenido en su integridad. Para expandirse utilizan las
+                conexiones de red, y por medio de ellas se copian íntegramente en otros equipos informáticos. De esta forma consiguen expandirse y lograr su 
+                fin dañino al colapsar la red.</p>  
+            <p>Gusanos de red: la diferencia de estos gusanos con los anteriores es que estos
+                programas están formados por distintas partes (llamadas "segmentos), cada
+                una de las cuales se ejecuta en distintos ordenadores (y ejecuta distintas
+                acciones) y utiliza la conexión a la red para comunicar esas partes entre sí.
+                La propagación de los distintos segmentos es tan sólo uno de los propósitos
+                del gusano. Ciertos gusanos tienen un segmento principal que coordina al
+                resto de gusanos; a este tipo de gusanos también se les llama "pulpos".</p>    
+            <p>Los gusanos obtienen una mejor efectividad utilizando técnicas de
+                <a href="/ingenieria-social.html">ingeniería social</a>. 
+                Para ello, los que diseñan los worms seleccionan un tema 
+               que le es de gran interés a la comunidad con el que camuflar el archivo malicioso. Los temas más buscado por las personas son topics como 
+               el sexo, software pirata, descargas ilegales, temas de actualidad, animé, famosos o temas morbosos. 
+               El comportamiento típico de los gusanos informáticos incluyen los siguientes elementos del sistema operativo donde pueden incrustar código 
+               malicioso:</p>    
+               <ul class="tab-3">
+                   <li>El sistema de arranque (sectores HD, archivos de inicio y
+                    principalmente el registro de configuraciones que se ha
+                    convertido en el sitio preferido para cargar todo tipo de
+                    <a href="/malware.html">malware</a>)</li>
+                    <li>El pool de procesos en memoria (que representa la lista de
+                        procesos en ejecución).</li>
+                    <li>El sistema de archivos (obviamente una aplicación debe
+                        ejecutarse desde un archivo que contenga sus instrucciones
+                        ejecutables y hace del spam y el phishing un caso especial de
+                        <a href="/malware.html">malware</a>)</li>    
+                    <li>El tráfico de red (donde se intercambian paquetes de
+                        información con otras máquinas).</li>    
+               </ul>
+        </section>
+        
+        <div class="margen-superior">
+            <a href="/bomba-logica.html" ><img src="fotos/flechas/izq.png" class="izq" title="Bomba lógica"></a>
+    
+            <a href="/puertas-traseras.html"><img src="fotos/flechas/der.png" class="der"  title="Puertas traseras">
+        </div>
+    </main>
+</body>
+</html>

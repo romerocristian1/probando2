@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/fotos/icon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/fotos/icon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/fotos/icon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/fotos/icon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/fotos/icon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/fotos/icon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/fotos/icon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/fotos/icon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/fotos/icon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/fotos/icon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/fotos/icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/fotos/icon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/fotos/icon/favicon-16x16.png">
+    <title>Desbordamiento del búfer</title>
+</head>
+<body>
+    <header>
+        <h1 class="centro subrayado">2.3.14 Desbordamiento de búfer</h1>
+    </header>
+    <main>
+        <section class="bordes_izqDer">
+            <p>Cuando un programador crea un programa tiene que controlar el tamaño del buffer destinado para dicho programa, o sea tiene que controlar
+                la cantidad máxima de datos que se puede copiar en el área de memoria reservada para dicha aplicación. Algunos programadores se olvidan de
+                contemplar esto cuando realizan sus aplicaciones convirtiéndose en una vulnerabilidad de software donde la cantidad de datos a almacenar 
+                es superior al tamaño del buffer. Y esto es una vulnerabilidad porque no hay un control sobre los bytes restantes al tamaño del buffer (tope 
+                del buffer); o sea los bytes sobrantes se van a almacenar en zona perteneciente a otros datos de utilidad o código almacenado en 
+                dicha memoria. O sea se pisan datos que pueden ser útiles o se pisa código que justo se necesita para ese momento.
+                Esto constituye un fallo de programación. El mismo puede ser aprovechado por un atacante para influir sobre el funcionamiento del sistema. </p>
+            <p>Se denomina shellcode al código ejecutable especialmente preparado que se copia al host objeto del ataque para obtener los privilegios del
+                programa vulnerable ya que si  el programa con el 
+               error en cuestión tiene privilegios especiales constituye en un fallo grave de seguridad.</p>
+        </section>
+        
+        <div class="margen-superior">
+            <a href="/inyeccion-sql.html" ><img src="fotos/flechas/izq.png" class="izq" title="Inyección SQL"></a>
+    
+            <a href="/clickjacking.html"><img src="fotos/flechas/der.png" class="der"  title="clickjacking">
+        </div>
+    </main>
+</body>
+</html>
